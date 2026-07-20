@@ -4,6 +4,7 @@ import '../data/activity_repository.dart';
 import '../l10n/app_localizations.dart';
 import '../services/app_settings.dart';
 import 'home_screen.dart';
+import 'language_button.dart';
 
 /// Анкета: возраст детей. Показывается при первом запуске и при редактировании.
 class OnboardingScreen extends StatefulWidget {
@@ -81,7 +82,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
     return Scaffold(
-      appBar: widget.editing ? AppBar(title: Text(l.editChildren)) : null,
+      appBar: AppBar(
+        title: widget.editing ? Text(l.editChildren) : null,
+        actions: const [LanguageButton()],
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24),

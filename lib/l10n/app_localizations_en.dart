@@ -109,6 +109,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get editChildren => 'Edit kids';
 
   @override
+  String get language => 'Language';
+
+  @override
+  String get languageSystem => 'Same as device';
+
+  @override
   String get noMatch => 'No game matched these filters. Try another place!';
 
   @override

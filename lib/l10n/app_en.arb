@@ -51,6 +51,8 @@
   "favoritesTitle": "Saved games",
   "favoritesEmpty": "Nothing saved yet. Tap “Save” on a game you like!",
   "editChildren": "Edit kids",
+  "language": "Language",
+  "languageSystem": "Same as device",
   "noMatch": "No game matched these filters. Try another place!",
   "kidsLine": "Playing: {ages}",
   "@kidsLine": {

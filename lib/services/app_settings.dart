@@ -39,4 +39,13 @@ class AppSettings {
 
   Future<void> setLastLocation(String location) =>
       _prefs.setString(_kLocation, location);
+
+  static const _kLocale = 'locale_override';
+
+  /// 'ru' / 'en' или null — использовать язык системы.
+  String? get localeOverride => _prefs.getString(_kLocale);
+
+  Future<void> setLocaleOverride(String? code) => code == null
+      ? _prefs.remove(_kLocale)
+      : _prefs.setString(_kLocale, code);
 }

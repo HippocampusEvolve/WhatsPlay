@@ -5,6 +5,7 @@ import '../l10n/app_localizations.dart';
 import '../services/app_settings.dart';
 import 'activity_screen.dart';
 import 'favorites_screen.dart';
+import 'language_button.dart';
 import 'locations.dart';
 import 'onboarding_screen.dart';
 
@@ -58,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text(l.appTitle),
         actions: [
+          const LanguageButton(),
           IconButton(
             icon: const Icon(Icons.favorite),
             tooltip: l.favoritesTitle,

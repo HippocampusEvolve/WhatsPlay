@@ -110,6 +110,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get editChildren => 'Изменить детей';
 
   @override
+  String get language => 'Язык';
+
+  @override
+  String get languageSystem => 'Как в системе';
+
+  @override
   String get noMatch =>
       'Под эти условия игра не нашлась. Попробуй другое место!';
 
