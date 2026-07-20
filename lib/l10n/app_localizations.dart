@@ -278,6 +278,12 @@ abstract class AppLocalizations {
   /// **'Same as device'**
   String get languageSystem;
 
+  /// No description provided for @settingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settingsTitle;
+
   /// No description provided for @noMatch.
   ///
   /// In en, this message translates to:

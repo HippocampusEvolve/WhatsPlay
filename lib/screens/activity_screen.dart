@@ -28,22 +28,34 @@ class ActivityScreen extends StatefulWidget {
 }
 
 class _ActivityScreenState extends State<ActivityScreen> {
-  late Activity _activity = widget.initial;
-  late final List<String> _recent = [widget.initial.id];
+  // История показанных игр: можно листать не только вперёд, но и назад.
+  late final List<Activity> _history = [widget.initial];
+  int _index = 0;
+
+  Activity get _activity => _history[_index];
 
   void _another() {
+    // Если уходили назад — сначала идём вперёд по уже показанным.
+    if (_index < _history.length - 1) {
+      setState(() => _index++);
+      return;
+    }
+    final recent =
+        _history.map((a) => a.id).toList().reversed.take(10).toList();
     final next = widget.repository.pick(
       childAges: widget.settings.childAges,
       location: widget.location!,
-      recentIds: _recent,
+      recentIds: recent,
     );
     if (next == null) return;
     setState(() {
-      _activity = next;
-      _recent.add(next.id);
-      // Помним последние 10 показанных, чтобы не крутить одно и то же.
-      if (_recent.length > 10) _recent.removeAt(0);
+      _history.add(next);
+      _index++;
     });
+  }
+
+  void _previous() {
+    if (_index > 0) setState(() => _index--);
   }
 
   @override
@@ -166,17 +178,31 @@ class _ActivityScreenState extends State<ActivityScreen> {
             if (widget.location != null)
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
-                child: SizedBox(
-                  width: double.infinity,
-                  child: FilledButton.icon(
-                    onPressed: _another,
-                    icon: const Icon(Icons.casino),
-                    label: Padding(
-                      padding: const EdgeInsets.all(12),
-                      child: Text(l.anotherIdea,
-                          style: const TextStyle(fontSize: 18)),
+                child: Row(
+                  children: [
+                    if (_index > 0) ...[
+                      OutlinedButton(
+                        onPressed: _previous,
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.all(16),
+                          minimumSize: const Size(56, 56),
+                        ),
+                        child: const Icon(Icons.chevron_left, size: 28),
+                      ),
+                      const SizedBox(width: 12),
+                    ],
+                    Expanded(
+                      child: FilledButton.icon(
+                        onPressed: _another,
+                        icon: const Icon(Icons.casino),
+                        label: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Text(l.anotherIdea,
+                              style: const TextStyle(fontSize: 18)),
+                        ),
+                      ),
                     ),
-                  ),
+                  ],
                 ),
               ),
           ],

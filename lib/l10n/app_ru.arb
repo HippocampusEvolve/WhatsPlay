@@ -54,6 +54,7 @@
   "editChildren": "Изменить детей",
   "language": "Язык",
   "languageSystem": "Как в системе",
+  "settingsTitle": "Настройки",
   "noMatch": "Под эти условия игра не нашлась. Попробуй другое место!",
   "kidsLine": "Играют: {ages}",
   "@kidsLine": {

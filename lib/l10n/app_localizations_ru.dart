@@ -119,6 +119,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get languageSystem => 'Как в системе';
 
   @override
+  String get settingsTitle => 'Настройки';
+
+  @override
   String get noMatch =>
       'Под эти условия игра не нашлась. Попробуй другое место!';
 

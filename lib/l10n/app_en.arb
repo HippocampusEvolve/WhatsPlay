@@ -54,6 +54,7 @@
   "editChildren": "Edit kids",
   "language": "Language",
   "languageSystem": "Same as device",
+  "settingsTitle": "Settings",
   "noMatch": "No game matched these filters. Try another place!",
   "kidsLine": "Playing: {ages}",
   "@kidsLine": {

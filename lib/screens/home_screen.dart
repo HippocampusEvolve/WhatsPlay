@@ -5,9 +5,8 @@ import '../l10n/app_localizations.dart';
 import '../services/app_settings.dart';
 import 'activity_screen.dart';
 import 'favorites_screen.dart';
-import 'language_button.dart';
 import 'locations.dart';
-import 'onboarding_screen.dart';
+import 'settings_screen.dart';
 
 /// Главный экран: где вы находитесь + большая кнопка «Чем заняться?».
 class HomeScreen extends StatefulWidget {
@@ -59,7 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text(l.appTitle),
         actions: [
-          const LanguageButton(),
           IconButton(
             icon: const Icon(Icons.favorite),
             tooltip: l.favoritesTitle,
@@ -74,16 +72,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           IconButton(
-            icon: const Icon(Icons.family_restroom),
-            tooltip: l.editChildren,
+            icon: const Icon(Icons.settings),
+            tooltip: l.settingsTitle,
             onPressed: () async {
               await Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => OnboardingScreen(
+                  builder: (_) => SettingsScreen(
                     settings: widget.settings,
                     repository: widget.repository,
-                    editing: true,
                   ),
                 ),
               );

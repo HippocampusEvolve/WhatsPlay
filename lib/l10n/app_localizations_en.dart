@@ -118,6 +118,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get languageSystem => 'Same as device';
 
   @override
+  String get settingsTitle => 'Settings';
+
+  @override
   String get noMatch => 'No game matched these filters. Try another place!';
 
   @override
