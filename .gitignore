@@ -44,6 +44,9 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Собранные APK в корне проекта — не для репозитория
+*.apk
+
 # Секреты — НИКОГДА не коммитить
 key.properties
 *.jks
