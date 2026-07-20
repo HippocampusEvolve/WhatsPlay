@@ -6,6 +6,7 @@ import '../services/app_settings.dart';
 import 'activity_screen.dart';
 import 'favorites_screen.dart';
 import 'locations.dart';
+import 'per_child_screen.dart';
 import 'settings_screen.dart';
 
 /// Главный экран: где вы находитесь + большая кнопка «Чем заняться?».
@@ -135,6 +136,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
+              if (ages.length >= 2) ...[
+                const SizedBox(height: 8),
+                SizedBox(
+                  width: double.infinity,
+                  child: FilledButton.tonal(
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => PerChildScreen(
+                          settings: widget.settings,
+                          repository: widget.repository,
+                          location: _location,
+                        ),
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Text('${l.forEachChild} 🎯',
+                          style: const TextStyle(fontSize: 17)),
+                    ),
+                  ),
+                ),
+              ],
             ],
           ),
         ),

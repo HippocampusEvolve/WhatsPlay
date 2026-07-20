@@ -41,6 +41,35 @@ class ActivityRepository {
         .toList();
   }
 
+  /// Игры для одного конкретного ребёнка, в которые можно играть в одиночку.
+  List<Activity> filterSolo({required int age, required String location}) {
+    return all
+        .where((a) =>
+            a.playersMin == 1 &&
+            a.locations.contains(location) &&
+            age >= a.ageMin &&
+            age <= a.ageMax)
+        .toList();
+  }
+
+  /// Случайная «одиночная» игра для ребёнка. excludeIds — игры, уже занятые
+  /// другими детьми или только что показанные; при нехватке вариантов
+  /// исключения ослабляются.
+  Activity? pickSolo({
+    required int age,
+    required String location,
+    List<String> excludeIds = const [],
+    Random? random,
+  }) {
+    final rng = random ?? Random();
+    final candidates = filterSolo(age: age, location: location);
+    if (candidates.isEmpty) return null;
+    final fresh =
+        candidates.where((a) => !excludeIds.contains(a.id)).toList();
+    final pool = fresh.isEmpty ? candidates : fresh;
+    return pool[rng.nextInt(pool.length)];
+  }
+
   /// Случайная игра под фильтры. Недавно показанные (recentIds) не повторяем,
   /// пока есть непоказанные варианты.
   Activity? pick({

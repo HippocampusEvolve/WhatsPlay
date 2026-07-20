@@ -100,4 +100,39 @@ void main() {
       expect(repo.pick(childAges: [], location: 'home'), isNull);
     });
   });
+
+  group('Режим «каждому своё»', () {
+    test('pickSolo выдаёт только одиночные игры строго под возраст', () {
+      final rng = Random(7);
+      for (var i = 0; i < 30; i++) {
+        final a = repo.pickSolo(age: 5, location: 'home', random: rng)!;
+        expect(a.playersMin, 1, reason: a.id);
+        expect(5, inInclusiveRange(a.ageMin, a.ageMax), reason: a.id);
+        expect(a.locations, contains('home'), reason: a.id);
+      }
+    });
+
+    test('для каждого места и возраста 3–10 лет есть одиночная игра', () {
+      for (final loc in validLocations) {
+        for (var age = 3; age <= 10; age++) {
+          expect(repo.filterSolo(age: age, location: loc), isNotEmpty,
+              reason: 'нет одиночных игр: место=$loc, возраст=$age');
+        }
+      }
+    });
+
+    test('pickSolo уважает исключения, пока есть другие варианты', () {
+      final rng = Random(7);
+      final first = repo.pickSolo(age: 7, location: 'yard', random: rng)!;
+      for (var i = 0; i < 20; i++) {
+        final next = repo.pickSolo(
+          age: 7,
+          location: 'yard',
+          excludeIds: [first.id],
+          random: rng,
+        )!;
+        expect(next.id, isNot(first.id));
+      }
+    });
+  });
 }

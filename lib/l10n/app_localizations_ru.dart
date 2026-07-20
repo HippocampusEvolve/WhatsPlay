@@ -58,6 +58,18 @@ class AppLocalizationsRu extends AppLocalizations {
   String get whatToPlay => 'Чем заняться?';
 
   @override
+  String get forEachChild => 'Каждому своё';
+
+  @override
+  String get shuffleAll => 'Перемешать всех';
+
+  @override
+  String get energyActive => 'активная';
+
+  @override
+  String get energyCalm => 'спокойная';
+
+  @override
   String get anotherIdea => 'Ещё вариант';
 
   @override

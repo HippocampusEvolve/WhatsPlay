@@ -176,6 +176,30 @@ abstract class AppLocalizations {
   /// **'What shall we play?'**
   String get whatToPlay;
 
+  /// No description provided for @forEachChild.
+  ///
+  /// In en, this message translates to:
+  /// **'One for each'**
+  String get forEachChild;
+
+  /// No description provided for @shuffleAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Shuffle all'**
+  String get shuffleAll;
+
+  /// No description provided for @energyActive.
+  ///
+  /// In en, this message translates to:
+  /// **'active'**
+  String get energyActive;
+
+  /// No description provided for @energyCalm.
+  ///
+  /// In en, this message translates to:
+  /// **'calm'**
+  String get energyCalm;
+
   /// No description provided for @anotherIdea.
   ///
   /// In en, this message translates to:

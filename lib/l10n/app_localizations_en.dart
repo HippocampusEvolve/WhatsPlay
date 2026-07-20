@@ -57,6 +57,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get whatToPlay => 'What shall we play?';
 
   @override
+  String get forEachChild => 'One for each';
+
+  @override
+  String get shuffleAll => 'Shuffle all';
+
+  @override
+  String get energyActive => 'active';
+
+  @override
+  String get energyCalm => 'calm';
+
+  @override
   String get anotherIdea => 'Another idea';
 
   @override
