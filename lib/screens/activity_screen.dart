@@ -1,0 +1,183 @@
+import 'package:flutter/material.dart';
+
+import '../data/activity_repository.dart';
+import '../l10n/app_localizations.dart';
+import '../models/activity.dart';
+import '../services/app_settings.dart';
+import 'locations.dart';
+
+/// Карточка игры: описание, происхождение, реквизит + кнопка «Ещё вариант».
+class ActivityScreen extends StatefulWidget {
+  const ActivityScreen({
+    super.key,
+    required this.initial,
+    required this.repository,
+    required this.settings,
+    this.location,
+  });
+
+  final Activity initial;
+  final ActivityRepository repository;
+  final AppSettings settings;
+
+  /// Если null — открыто из избранного, кнопка «Ещё вариант» скрыта.
+  final String? location;
+
+  @override
+  State<ActivityScreen> createState() => _ActivityScreenState();
+}
+
+class _ActivityScreenState extends State<ActivityScreen> {
+  late Activity _activity = widget.initial;
+  late final List<String> _recent = [widget.initial.id];
+
+  void _another() {
+    final next = widget.repository.pick(
+      childAges: widget.settings.childAges,
+      location: widget.location!,
+      recentIds: _recent,
+    );
+    if (next == null) return;
+    setState(() {
+      _activity = next;
+      _recent.add(next.id);
+      // Помним последние 10 показанных, чтобы не крутить одно и то же.
+      if (_recent.length > 10) _recent.removeAt(0);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context)!;
+    final lang = contentLang(context);
+    final theme = Theme.of(context);
+    final isFav = widget.settings.isFavorite(_activity.id);
+    final props = _activity.propsIn(lang);
+    final safety = _activity.safetyIn(lang);
+
+    return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            icon: Icon(isFav ? Icons.favorite : Icons.favorite_border),
+            tooltip: isFav ? l.savedToFavorites : l.addToFavorites,
+            onPressed: () async {
+              await widget.settings.toggleFavorite(_activity.id);
+              setState(() {});
+            },
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.all(20),
+                children: [
+                  Text(_activity.emoji,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(fontSize: 64)),
+                  const SizedBox(height: 8),
+                  Text(_activity.titleIn(lang),
+                      textAlign: TextAlign.center,
+                      style: theme.textTheme.headlineMedium),
+                  const SizedBox(height: 12),
+                  Center(
+                    child: Chip(
+                      avatar: const Icon(Icons.public, size: 18),
+                      label: Text(_activity.originIn(lang)),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Text(_activity.descriptionIn(lang),
+                      style: theme.textTheme.bodyLarge?.copyWith(height: 1.4)),
+                  const SizedBox(height: 20),
+                  _InfoRow(
+                    icon: Icons.cake,
+                    label: l.agesLabel,
+                    value: l.agesValue(_activity.ageMin, _activity.ageMax),
+                  ),
+                  _InfoRow(
+                    icon: Icons.groups,
+                    label: l.playersLabel,
+                    value: l.playersValue(_activity.playersMin),
+                  ),
+                  _InfoRow(
+                    icon: Icons.backpack,
+                    label: l.propsLabel,
+                    value: props.isEmpty ? l.propsNothing : props,
+                  ),
+                  if (safety != null) ...[
+                    const SizedBox(height: 12),
+                    Card(
+                      color: theme.colorScheme.tertiaryContainer,
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Icon(Icons.warning_amber),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text('${l.safetyLabel}: $safety'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+            if (widget.location != null)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: FilledButton.icon(
+                    onPressed: _another,
+                    icon: const Icon(Icons.casino),
+                    label: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Text(l.anotherIdea,
+                          style: const TextStyle(fontSize: 18)),
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _InfoRow extends StatelessWidget {
+  const _InfoRow({
+    required this.icon,
+    required this.label,
+    required this.value,
+  });
+
+  final IconData icon;
+  final String label;
+  final String value;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 6),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, size: 20, color: theme.colorScheme.primary),
+          const SizedBox(width: 10),
+          Text('$label: ', style: theme.textTheme.titleSmall),
+          Expanded(child: Text(value, style: theme.textTheme.bodyMedium)),
+        ],
+      ),
+    );
+  }
+}

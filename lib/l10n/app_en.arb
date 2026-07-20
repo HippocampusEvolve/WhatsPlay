@@ -1,0 +1,63 @@
+{
+  "@@locale": "en",
+  "appTitle": "WhatsPlay",
+  "onboardingTitle": "Who is going to play?",
+  "onboardingSubtitle": "Add your kids' ages so we can suggest games that fit.",
+  "addChild": "Add a child",
+  "childAge": "{age, plural, one {{age} year old} other {{age} years old}}",
+  "@childAge": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "continueButton": "Let's go!",
+  "whereAreYou": "Where are you now?",
+  "locationHome": "At home",
+  "locationYard": "In the yard",
+  "locationCity": "In the city",
+  "locationVillage": "In the village",
+  "locationNature": "Out in nature",
+  "whatToPlay": "What shall we play?",
+  "anotherIdea": "Another idea",
+  "addToFavorites": "Save",
+  "savedToFavorites": "Saved",
+  "originLabel": "Where this game comes from",
+  "propsLabel": "You will need",
+  "propsNothing": "Nothing at all",
+  "agesLabel": "Ages",
+  "agesValue": "{min}–{max}",
+  "@agesValue": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "playersLabel": "Players",
+  "playersValue": "{min, plural, other {{min}+}}",
+  "@playersValue": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyLabel": "Stay safe",
+  "favoritesTitle": "Saved games",
+  "favoritesEmpty": "Nothing saved yet. Tap “Save” on a game you like!",
+  "editChildren": "Edit kids",
+  "noMatch": "No game matched these filters. Try another place!",
+  "kidsLine": "Playing: {ages}",
+  "@kidsLine": {
+    "placeholders": {
+      "ages": {
+        "type": "String"
+      }
+    }
+  }
+}

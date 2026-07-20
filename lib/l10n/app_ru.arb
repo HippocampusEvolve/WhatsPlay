@@ -1,0 +1,63 @@
+{
+  "@@locale": "ru",
+  "appTitle": "WhatsPlay",
+  "onboardingTitle": "Кто будет играть?",
+  "onboardingSubtitle": "Добавь возраст детей — будем подбирать игры по возрасту.",
+  "addChild": "Добавить ребёнка",
+  "childAge": "{age, plural, one {{age} год} few {{age} года} other {{age} лет}}",
+  "@childAge": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "continueButton": "Поехали!",
+  "whereAreYou": "Где вы сейчас?",
+  "locationHome": "Дома",
+  "locationYard": "Во дворе",
+  "locationCity": "В городе",
+  "locationVillage": "В деревне",
+  "locationNature": "На природе",
+  "whatToPlay": "Чем заняться?",
+  "anotherIdea": "Ещё вариант",
+  "addToFavorites": "Сохранить",
+  "savedToFavorites": "Сохранено",
+  "originLabel": "Откуда эта игра",
+  "propsLabel": "Что понадобится",
+  "propsNothing": "Ничего не нужно",
+  "agesLabel": "Возраст",
+  "agesValue": "{min}–{max}",
+  "@agesValue": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "playersLabel": "Игроки",
+  "playersValue": "{min, plural, other {от {min}}}",
+  "@playersValue": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyLabel": "Осторожно",
+  "favoritesTitle": "Сохранённые игры",
+  "favoritesEmpty": "Пока пусто. Нажми «Сохранить» на игре, которая понравилась!",
+  "editChildren": "Изменить детей",
+  "noMatch": "Под эти условия игра не нашлась. Попробуй другое место!",
+  "kidsLine": "Играют: {ages}",
+  "@kidsLine": {
+    "placeholders": {
+      "ages": {
+        "type": "String"
+      }
+    }
+  }
+}
