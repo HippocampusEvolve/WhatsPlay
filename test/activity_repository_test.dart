@@ -35,6 +35,14 @@ void main() {
             expect(safety.trim(), isNotEmpty, reason: '${a.id}: safety.$lang');
           }
         }
+        for (final v in a.variants) {
+          for (final lang in ['ru', 'en']) {
+            expect(v.originIn(lang).trim(), isNotEmpty,
+                reason: '${a.id}: variant origin.$lang');
+            expect(v.textIn(lang).trim(), isNotEmpty,
+                reason: '${a.id}: variant text.$lang');
+          }
+        }
         expect(a.emoji.trim(), isNotEmpty, reason: '${a.id}: emoji');
         expect(a.ageMin, lessThanOrEqualTo(a.ageMax), reason: '${a.id}: ages');
         expect(a.ageMin, greaterThanOrEqualTo(1), reason: '${a.id}: age_min');

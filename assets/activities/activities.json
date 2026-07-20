@@ -103,32 +103,21 @@
       "props": {
         "ru": "Мел и камешек",
         "en": "Chalk and a pebble"
-      }
-    },
-    {
-      "id": "escargot",
-      "emoji": "🐌",
-      "title": {
-        "ru": "Улитка",
-        "en": "Escargot"
       },
-      "description": {
-        "ru": "Французский вариант классиков: клетки рисуются спиралью, как раковина улитки. Прыгать нужно на одной ноге до центра и обратно — без камешка, зато по спирали кружится голова! Кто прошёл — подписывает своим именем любую клетку, и теперь только он может на неё наступать.",
-        "en": "The French version of hopscotch: the squares spiral like a snail shell. Hop on one foot to the centre and back — no pebble needed, but the spiral makes your head spin! Finish the course and you write your name on any square: now only you may step on it."
-      },
-      "origin": {
-        "ru": "Франция, дворовая классика",
-        "en": "France, a schoolyard classic"
-      },
-      "age_min": 4,
-      "age_max": 9,
-      "locations": ["yard", "city"],
-      "players_min": 2,
-      "energy": "active",
-      "props": {
-        "ru": "Мел",
-        "en": "Chalk"
-      }
+      "variants": [
+        {
+          "origin": {"ru": "Франция", "en": "France"},
+          "text": {"ru": "«Улитка» (escargot): клетки рисуют спиралью, прыгают на одной ноге до центра без камешка, а прошедший подписывает клетку своим именем — теперь только он может на неё наступать.", "en": "'Escargot': the squares spiral like a snail shell, you hop to the centre on one foot with no pebble, and a finisher writes their name on a square — now only they may step on it."}
+        },
+        {
+          "origin": {"ru": "Индия", "en": "India"},
+          "text": {"ru": "«Стапу»: камешек нужно перекидывать из клетки в клетку носком прыгающей ноги.", "en": "'Stapu': the pebble must be nudged from square to square with the toe of your hopping foot."}
+        },
+        {
+          "origin": {"ru": "Древний Рим", "en": "Ancient Rome"},
+          "text": {"ru": "легионеры чертили поля прямо на каменных плитах дорог — такие «доски» до сих пор видны на римском форуме.", "en": "legionaries scratched courts right into stone pavements — you can still see such 'boards' at the Roman Forum."}
+        }
+      ]
     },
     {
       "id": "dodgeball",
@@ -178,7 +167,17 @@
       "props": {
         "ru": "",
         "en": ""
-      }
+      },
+      "variants": [
+        {
+          "origin": {"ru": "Древняя Греция", "en": "Ancient Greece"},
+          "text": {"ru": "«Агальмата» («статуи») — дети замирали, изображая знаменитые скульптуры.", "en": "'Agalmata' ('statues') — children froze posing as famous sculptures."}
+        },
+        {
+          "origin": {"ru": "Весь мир", "en": "Worldwide"},
+          "text": {"ru": "«Замри-отомри» — простейшая версия без моря и фигур.", "en": "'Freeze!' — the simplest version, no sea and no figures."}
+        }
+      ]
     },
     {
       "id": "sekretiki",
@@ -228,7 +227,21 @@
       "props": {
         "ru": "",
         "en": ""
-      }
+      },
+      "variants": [
+        {
+          "origin": {"ru": "Россия", "en": "Russia"},
+          "text": {"ru": "«Тише едешь — дальше будешь. Стоп!» — водящий говорит присказку, на «стоп» оборачивается.", "en": "'The slower you go, the further you'll get. Stop!' — the leader chants and spins round on 'stop'."}
+        },
+        {
+          "origin": {"ru": "США", "en": "USA"},
+          "text": {"ru": "«Red Light, Green Light»: «зелёный свет» — беги, «красный» — замри.", "en": "'Red Light, Green Light': green means run, red means freeze."}
+        },
+        {
+          "origin": {"ru": "Англия", "en": "England"},
+          "text": {"ru": "«Grandmother's Footsteps» — подкрадываются к «бабушке», стоящей спиной.", "en": "'Grandmother's Footsteps' — players creep up on 'grandma' standing with her back turned."}
+        }
+      ]
     },
     {
       "id": "conkers",
@@ -307,7 +320,21 @@
       "props": {
         "ru": "Пять камешков",
         "en": "Five pebbles"
-      }
+      },
+      "variants": [
+        {
+          "origin": {"ru": "Россия", "en": "Russia"},
+          "text": {"ru": "«Бабки» — играли косточками копыт коров, их даже отливали из чугуна.", "en": "'Babki' — played with cattle anklebones, even cast in iron."}
+        },
+        {
+          "origin": {"ru": "США и Англия", "en": "USA and England"},
+          "text": {"ru": "«Jacks»: вместо подброшенного камешка — маленький резиновый мячик, звёздочки хватают, пока он отскакивает.", "en": "'Jacks': a small rubber ball replaces the tossed stone — you snatch the jacks while it bounces."}
+        },
+        {
+          "origin": {"ru": "Азия", "en": "Asia"},
+          "text": {"ru": "«Пять камушков» — целая лестница из десятков усложняющихся фигур.", "en": "'Five Stones' — a whole ladder of dozens of ever-harder figures."}
+        }
+      ]
     },
     {
       "id": "mancala",
@@ -332,7 +359,17 @@
       "props": {
         "ru": "48 камешков и земля или песок для ямок",
         "en": "48 pebbles and some dirt or sand for pits"
-      }
+      },
+      "variants": [
+        {
+          "origin": {"ru": "Гана", "en": "Ghana"},
+          "text": {"ru": "«Оваре» — национальная версия, по ней проводят турниры.", "en": "'Oware' — the national version, with real tournaments."}
+        },
+        {
+          "origin": {"ru": "Восточная Африка", "en": "East Africa"},
+          "text": {"ru": "«Бао» — усложнённая версия на 32 ямки, считается игрой мудрецов.", "en": "'Bao' — a harder 32-pit version, considered a game of the wise."}
+        }
+      ]
     },
     {
       "id": "kabaddi",
@@ -590,7 +627,17 @@
       "props": {
         "ru": "Стеклянные шарики или круглые камешки",
         "en": "Glass marbles or round pebbles"
-      }
+      },
+      "variants": [
+        {
+          "origin": {"ru": "Индия", "en": "India"},
+          "text": {"ru": "«Канча»: по шарикам щёлкают особым способом — натягивая палец второй рукой, как тетиву.", "en": "'Kancha': marbles are flicked a special way — the finger drawn back with the other hand like a bowstring."}
+        },
+        {
+          "origin": {"ru": "Россия", "en": "Russia"},
+          "text": {"ru": "«В лунку»: шарики закатывают в ямку с расстояния, как в мини-гольфе.", "en": "'Into the hole': marbles are rolled into a small pit from a distance, like mini-golf."}
+        }
+      ]
     },
     {
       "id": "cloud-shapes",
@@ -723,7 +770,13 @@
       "safety": {
         "ru": "Кидайте палку только когда никого нет рядом с «городком».",
         "en": "Throw the stick only when no one is near the 'town'."
-      }
+      },
+      "variants": [
+        {
+          "origin": {"ru": "Швеция", "en": "Sweden"},
+          "text": {"ru": "«Кубб», «викингские шахматы»: деревянными палками сбивают чурки противника, а в конце — «короля».", "en": "'Kubb', the 'Viking chess': wooden batons knock down the enemy's blocks, and finally the 'king'."}
+        }
+      ]
     },
     {
       "id": "charades",
@@ -862,8 +915,8 @@
         "en": "Two lines of players link hands facing each other. One line calls a player from the other team, who charges at their chain trying to break through. Break the link — take an opponent back with you; fail — join their team. Known as Red Rover in England and America."
       },
       "origin": {
-        "ru": "Россия; в Англии и США — «Red Rover»",
-        "en": "Russia; known as 'Red Rover' in England and the USA"
+        "ru": "Россия, старинная дворовая игра",
+        "en": "Russia, an old street game"
       },
       "age_min": 6,
       "age_max": 12,
@@ -877,7 +930,13 @@
       "safety": {
         "ru": "Держитесь за руки, а не за одежду, и играйте на мягкой траве.",
         "en": "Grip hands, not clothing, and play on soft grass."
-      }
+      },
+      "variants": [
+        {
+          "origin": {"ru": "Англия и США", "en": "England and the USA"},
+          "text": {"ru": "«Red Rover»: команда хором зовёт — «Red Rover, Red Rover, пришли нам Сашу!»", "en": "'Red Rover': the team chants together — 'Red Rover, Red Rover, send Sasha right over!'"}
+        }
+      ]
     },
     {
       "id": "hot-cold",
@@ -1136,6 +1195,915 @@
         "ru": "Договоритесь: по рукам, голове и лицу не бить. Лучше играть под присмотром взрослого.",
         "en": "Agree first: no hits to hands, head or face. Best with an adult watching."
       }
+    },
+    {
+      "id": "hide-and-seek",
+      "emoji": "🙈",
+      "title": {"ru": "Прятки", "en": "Hide and Seek"},
+      "description": {
+        "ru": "Водящий считает до двадцати с закрытыми глазами, остальные прячутся. Найденным нужно успеть добежать до места счёта и «застукаться» раньше водящего. Пряткам тысячи лет — их описывал ещё древнегреческий писатель Поллукс во II веке.",
+        "en": "The seeker counts to twenty with eyes closed while everyone hides. When spotted, race the seeker back to home base to tag yourself safe. Hide and seek is thousands of years old — the Greek writer Pollux described it in the 2nd century."
+      },
+      "origin": {"ru": "Весь мир, известна с античности", "en": "Worldwide, known since antiquity"},
+      "age_min": 3,
+      "age_max": 12,
+      "locations": ["home", "yard", "village"],
+      "players_min": 2,
+      "energy": "active",
+      "props": {"ru": "", "en": ""},
+      "variants": [
+        {
+          "origin": {"ru": "Россия", "en": "Russia"},
+          "text": {"ru": "«12 палочек»: на дощечку-качели кладут 12 палочек, водящий собирает их после того, как игрок разбил «катапульту» ногой — за это время все прячутся заново.", "en": "'12 sticks': 12 sticks sit on a seesaw plank; a player stomps the 'catapult', and while the seeker gathers them, everyone hides again."}
+        },
+        {
+          "origin": {"ru": "Нигерия", "en": "Nigeria"},
+          "text": {"ru": "«Boju-boju»: водящий поёт песню, пока остальные прячутся, а найденные пытаются проскочить мимо него в «дом».", "en": "'Boju-boju': the seeker sings a song while others hide, and found players dash past them to reach 'home'."}
+        }
+      ]
+    },
+    {
+      "id": "blind-mans-buff",
+      "emoji": "🙆",
+      "title": {"ru": "Жмурки", "en": "Blind Man's Buff"},
+      "description": {
+        "ru": "Водящему завязывают глаза, раскручивают — и он на ощупь ловит игроков, которые дразнят его хлопками и голосами. Поймал — угадай на ощупь, кто это! В жмурки играли в Древней Греции («медная муха»), а при европейских дворах в них резвились даже взрослые вельможи.",
+        "en": "The blindfolded catcher is spun around and hunts players by touch while they tease with claps and voices. Catch someone — now guess who it is by feel! Ancient Greeks played it as 'the bronze fly', and at European courts even grown nobles joined in."
+      },
+      "origin": {"ru": "Древняя Греция", "en": "Ancient Greece"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["home", "yard"],
+      "players_min": 3,
+      "energy": "active",
+      "props": {"ru": "Платок для глаз", "en": "A blindfold"},
+      "safety": {"ru": "Уберите острые углы и играйте на ровной площадке.", "en": "Clear away sharp corners and play on even ground."},
+      "variants": [
+        {
+          "origin": {"ru": "Франция", "en": "France"},
+          "text": {"ru": "«Колен-майяр» — названа в честь рыцаря, сражавшегося вслепую.", "en": "'Colin-maillard' — named after a knight who fought on blindly."}
+        },
+        {
+          "origin": {"ru": "Германия", "en": "Germany"},
+          "text": {"ru": "«Blinde Kuh» («слепая корова»).", "en": "'Blinde Kuh' — 'blind cow'."}
+        }
+      ]
+    },
+    {
+      "id": "tag",
+      "emoji": "🏃",
+      "title": {"ru": "Салки", "en": "Tag"},
+      "description": {
+        "ru": "Самая быстрая игра на свете: водящий догоняет, коснулся — «осалил», теперь водишь ты! Договоритесь о границах площадки и «домиках», где салить нельзя. Играют во всех странах мира, а в США даже существует профессиональная лига чейз-тега.",
+        "en": "The fastest game on Earth: the chaser runs you down, one touch and you're 'it'! Agree on boundaries and safe 'homes' first. Played in every country — the USA even has a professional Chase Tag league."
+      },
+      "origin": {"ru": "Весь мир, древнейшая игра", "en": "Worldwide, one of the oldest games"},
+      "age_min": 4,
+      "age_max": 12,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 3,
+      "energy": "active",
+      "props": {"ru": "", "en": ""},
+      "variants": [
+        {
+          "origin": {"ru": "Россия", "en": "Russia"},
+          "text": {"ru": "«Колдунчики»: осаленный замирает «заколдованным», расколдовать может свободный игрок касанием.", "en": "'Freeze tag': the tagged player freezes 'enchanted' until a free player breaks the spell with a touch."}
+        },
+        {
+          "origin": {"ru": "Россия", "en": "Russia"},
+          "text": {"ru": "«Выше ноги от земли»: нельзя салить того, кто повис или залез повыше.", "en": "'Feet off the ground': you can't be tagged while hanging or perched above the ground."}
+        },
+        {
+          "origin": {"ru": "Пакистан и Индия", "en": "Pakistan and India"},
+          "text": {"ru": "«Кхо-кхо» — командные салки-эстафета, национальный спорт.", "en": "'Kho-kho' — team relay tag, a national sport."}
+        }
+      ]
+    },
+    {
+      "id": "tic-tac-toe",
+      "emoji": "⭕",
+      "title": {"ru": "Крестики-нолики", "en": "Tic-Tac-Toe"},
+      "description": {
+        "ru": "Поле три на три, один рисует крестики, другой нолики: кто первым выстроит три своих в ряд, тот победил. Похожие поля для игры находят выцарапанными по всей Римской империи. Освоили классику — попробуйте поле 10×10 до пяти в ряд!",
+        "en": "A three-by-three grid, X's versus O's: first to line up three in a row wins. Similar scratched boards have been found all across the Roman Empire. Mastered the classic? Try a 10×10 grid, five in a row!"
+      },
+      "origin": {"ru": "Древний Рим", "en": "Ancient Rome"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["home", "city", "village", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Бумага и карандаш (или палочка и песок)", "en": "Paper and pencil (or a stick and sand)"},
+      "variants": [
+        {
+          "origin": {"ru": "Япония", "en": "Japan"},
+          "text": {"ru": "«Гомоку»: большая доска и пять в ряд — по ней проводят чемпионаты мира.", "en": "'Gomoku': a big board and five in a row — with real world championships."}
+        }
+      ]
+    },
+    {
+      "id": "word-chain-cities",
+      "emoji": "🌍",
+      "title": {"ru": "Города", "en": "Word Chain"},
+      "description": {
+        "ru": "Первый называет город, следующий должен назвать город на последнюю букву предыдущего: Москва — Астрахань — Нижний Новгород... Кто задумался дольше минуты — выбывает. Можно играть в животных, еду или во «всё подряд». Спасает в любой очереди и дороге.",
+        "en": "The first player names a word, the next must start with its last letter: cat — tiger — rabbit... Take longer than a minute and you're out. Play with cities, animals or food. A lifesaver in any queue or journey."
+      },
+      "origin": {"ru": "Россия, дорожная классика", "en": "Worldwide, a travel classic"},
+      "age_min": 6,
+      "age_max": 14,
+      "locations": ["home", "city", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""},
+      "variants": [
+        {
+          "origin": {"ru": "Япония", "en": "Japan"},
+          "text": {"ru": "«Сиритори» — то же самое слогами; сказал слово, оканчивающееся на «н», — проиграл, ведь с «н» слов не начинают.", "en": "'Shiritori' — the same with syllables; say a word ending in 'n' and you lose, as no Japanese word starts with it."}
+        }
+      ]
+    },
+    {
+      "id": "rock-paper-scissors",
+      "emoji": "✂️",
+      "title": {"ru": "Камень, ножницы, бумага", "en": "Rock, Paper, Scissors"},
+      "description": {
+        "ru": "На счёт «раз-два-три» все выбрасывают руку: камень тупит ножницы, ножницы режут бумагу, бумага накрывает камень. Игра пришла из Китая через Японию, где зовётся «дзян-кэн». Устройте турнир до трёх побед — или решайте ею, кому первому водить.",
+        "en": "On 'one-two-three' everyone throws a hand: rock blunts scissors, scissors cut paper, paper wraps rock. The game came from China via Japan, where it's called 'janken'. Run a best-of-three tournament — or use it to decide who goes first."
+      },
+      "origin": {"ru": "Китай и Япония, несколько веков", "en": "China and Japan, centuries old"},
+      "age_min": 4,
+      "age_max": 14,
+      "locations": ["home", "yard", "city", "village", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""},
+      "variants": [
+        {
+          "origin": {"ru": "Россия", "en": "Russia"},
+          "text": {"ru": "присказка «цу-е-фа», а иногда добавляют «колодец», который топит камень и ножницы.", "en": "played with the chant 'tsu-ye-fa', sometimes adding a 'well' that drowns rock and scissors."}
+        },
+        {
+          "origin": {"ru": "Индонезия", "en": "Indonesia"},
+          "text": {"ru": "«Слон — человек — муравей»: слон побеждает человека, человек муравья, а муравей заползает в ухо слону!", "en": "'Elephant — man — ant': elephant beats man, man beats ant, and the ant crawls into the elephant's ear!"}
+        }
+      ]
+    },
+    {
+      "id": "clapping-games",
+      "emoji": "👏",
+      "title": {"ru": "Ладушки и хлопушки", "en": "Clapping Games"},
+      "description": {
+        "ru": "Игры в ладошки: два игрока в ритме хлопают в свои и чужие ладони, приговаривая считалку, и с каждым кругом ускоряются. Начните с простых «ладушек», потом выучите сложные схемы крест-накрест. Кто сбился — начинает сначала.",
+        "en": "Hand-clap games: two players clap their own and each other's palms in rhythm to a chant, speeding up each round. Start simple, then learn tricky criss-cross patterns. Miss a beat — start over."
+      },
+      "origin": {"ru": "Весь мир, многовековая традиция", "en": "Worldwide, a centuries-old tradition"},
+      "age_min": 3,
+      "age_max": 9,
+      "locations": ["home", "yard", "city"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""},
+      "variants": [
+        {
+          "origin": {"ru": "США", "en": "USA"},
+          "text": {"ru": "«Miss Mary Mack» — самая известная американская хлопалка со скороговоркой.", "en": "'Miss Mary Mack' — the most famous American clapping rhyme."}
+        },
+        {
+          "origin": {"ru": "Франция XVIII века", "en": "18th-century France"},
+          "text": {"ru": "первые описания игр в ладошки встречаются у парижских гувернанток.", "en": "the first written accounts come from Parisian governesses."}
+        }
+      ]
+    },
+    {
+      "id": "jump-rope",
+      "emoji": "🪢",
+      "title": {"ru": "Скакалка с фигурами", "en": "Jump Rope Tricks"},
+      "description": {
+        "ru": "Не просто прыгать, а по программе: десять раз на двух ногах, десять на одной, «крестиком», задом наперёд, с двойным прокрутом. Двое крутят длинную верёвку, третий забегает и прыгает под считалку. Скакалке тысячи лет — прыгали ещё в Древнем Китае и Египте.",
+        "en": "Not just jumping — a routine: ten on two feet, ten on one, cross-arms, backwards, double-unders. Two players turn a long rope while a third runs in to jump to a chant. The rope is millennia old — Ancient China and Egypt skipped too."
+      },
+      "origin": {"ru": "Древний Китай и Египет", "en": "Ancient China and Egypt"},
+      "age_min": 5,
+      "age_max": 13,
+      "locations": ["yard", "city", "village"],
+      "players_min": 1,
+      "energy": "active",
+      "props": {"ru": "Скакалка или верёвка", "en": "A jump rope or any rope"},
+      "variants": [
+        {
+          "origin": {"ru": "США", "en": "USA"},
+          "text": {"ru": "«Дабл-датч»: две верёвки крутятся навстречу друг другу — по нему проходят чемпионаты мира.", "en": "'Double Dutch': two ropes spin toward each other — with world championships."}
+        }
+      ]
+    },
+    {
+      "id": "leapfrog",
+      "emoji": "🐸",
+      "title": {"ru": "Чехарда", "en": "Leapfrog"},
+      "description": {
+        "ru": "Один нагибается, упёршись руками в колени, второй разбегается и перепрыгивает через него, опираясь на спину, — и тут же сам встаёт «козлом» дальше. Так цепочка прыгает через весь двор. Чехарда изображена на картине Брейгеля «Игры детей» 1560 года — за пятьсот лет не изменилась ни капли.",
+        "en": "One player bends over, hands on knees; the next runs up and vaults over their back — then instantly becomes the next 'frog' ahead. The chain leaps across the whole yard. Leapfrog appears in Bruegel's 1560 painting 'Children's Games' — unchanged in five hundred years."
+      },
+      "origin": {"ru": "Европа, минимум с XVI века", "en": "Europe, since at least the 16th century"},
+      "age_min": 5,
+      "age_max": 12,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 2,
+      "energy": "active",
+      "props": {"ru": "", "en": ""},
+      "safety": {"ru": "Прыгайте на траве и наклоняйте голову ниже плеч.", "en": "Play on grass and keep the head tucked below the shoulders."}
+    },
+    {
+      "id": "shtander",
+      "emoji": "🎾",
+      "title": {"ru": "Штандер-стоп", "en": "Shtander-Stop"},
+      "description": {
+        "ru": "Водящий подбрасывает мяч и выкрикивает чьё-то имя — все разбегаются, а названный ловит мяч и кричит «Штандер-стоп!» Все замирают. Теперь он на глаз называет, сколько до кого шагов («три великана и два лилипута»), делает их и пытается попасть мячом в игрока.",
+        "en": "The thrower tosses the ball up and shouts someone's name — everyone scatters while that player catches it and yells 'Stop!' All freeze. Now they estimate the distance to a player in steps ('three giants and two dwarfs'), take them, and throw the ball to tag."
+      },
+      "origin": {"ru": "Россия и Германия, дворовая классика XX века", "en": "Russia and Germany, a 20th-century yard classic"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["yard", "village"],
+      "players_min": 3,
+      "energy": "active",
+      "props": {"ru": "Мяч", "en": "A ball"}
+    },
+    {
+      "id": "five-names",
+      "emoji": "🖐️",
+      "title": {"ru": "Я знаю пять имён", "en": "I Know Five Names"},
+      "description": {
+        "ru": "Бей мяч о землю ладонью и на каждый удар говори: «Я — знаю — пять — имён — девочек: Маша — раз, Даша — два...» Сбился или потерял мяч — ход переходит. Категории всё сложнее: пять рек, пять городов, пять динозавров!",
+        "en": "Bounce the ball with your palm, one word per bounce: 'I — know — five — names — of girls: Mary — one, Jane — two...' Stumble or lose the ball and your turn ends. Categories get harder: five rivers, five cities, five dinosaurs!"
+      },
+      "origin": {"ru": "СССР, дворовая классика", "en": "USSR, a yard classic"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["yard", "home", "city"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Мяч", "en": "A ball"}
+    },
+    {
+      "id": "edible-inedible",
+      "emoji": "🍏",
+      "title": {"ru": "Съедобное-несъедобное", "en": "Edible or Not"},
+      "description": {
+        "ru": "Водящий кидает мяч каждому по очереди, называя предмет: съедобное — лови, несъедобное — отбивай! «Мороженое!» — ловишь. «Табуретка!» — отбил. Поймал табуретку — сам водишь. Водящий хитрит и ускоряется: «пирог, творог, ...сапог!»",
+        "en": "The leader throws the ball to each player naming something: edible — catch it, inedible — knock it away! 'Ice cream!' — catch. 'A chair!' — punch it back. Catch the chair and you're the new leader. Leaders love traps: 'cake, steak, ...a rake!'"
+      },
+      "origin": {"ru": "СССР, дворовая классика", "en": "USSR, a yard classic"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["yard", "home", "village"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Мяч", "en": "A ball"}
+    },
+    {
+      "id": "hot-potato",
+      "emoji": "🥔",
+      "title": {"ru": "Горячая картошка", "en": "Hot Potato"},
+      "description": {
+        "ru": "Встаньте в круг и перебрасывайте мяч как можно быстрее — он «горячий», держать нельзя! Кто замешкался или уронил — садится в центр круга, в «котёл». Выручить его можно, попав по нему мячом сверху. Последний оставшийся — победитель.",
+        "en": "Stand in a circle and pass the ball fast — it's 'hot', no holding! Fumble or drop it and you sit in the middle, 'in the pot'. Rescue someone by hitting them with a lobbed ball. Last player standing wins."
+      },
+      "origin": {"ru": "Весь мир, дворовая классика", "en": "Worldwide, a playground classic"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["yard", "village", "home"],
+      "players_min": 3,
+      "energy": "active",
+      "props": {"ru": "Мяч", "en": "A ball"}
+    },
+    {
+      "id": "kolechko",
+      "emoji": "💍",
+      "title": {"ru": "Колечко-колечко", "en": "Ring on a String"},
+      "description": {
+        "ru": "Все сидят в ряд, сложив ладони лодочкой. Водящий проходит вдоль, вкладывая свои ладони в каждые, — и незаметно оставляет кому-то колечко. Потом отходит: «Колечко-колечко, выйди на крылечко!» Тот, у кого колечко, должен вскочить и добежать до водящего, а соседи — успеть его удержать.",
+        "en": "Everyone sits in a row, palms cupped. The leader passes along, slipping their hands into each pair — secretly leaving a ring with one player. Then steps back: 'Ring, little ring, come out to the porch!' The ring-holder must leap up and reach the leader before neighbours grab them."
+      },
+      "origin": {"ru": "Россия, старинная посиделочная игра", "en": "Russia, an old gathering game"},
+      "age_min": 5,
+      "age_max": 10,
+      "locations": ["home", "yard", "village"],
+      "players_min": 4,
+      "energy": "calm",
+      "props": {"ru": "Колечко или пуговица", "en": "A ring or button"}
+    },
+    {
+      "id": "geese-swans",
+      "emoji": "🦢",
+      "title": {"ru": "Гуси-лебеди", "en": "Geese and Swans"},
+      "description": {
+        "ru": "«Гуси-гуси!» — «Га-га-га!» — «Есть хотите?» — «Да-да-да!» — «Ну летите же домой!» — «Серый волк под горой не пускает нас домой!» После переклички «гуси» бегут через поле домой, а «волк» выскакивает и ловит. Пойманный гусь становится волчонком.",
+        "en": "'Geese, geese!' — 'Honk-honk-honk!' — 'Are you hungry?' — 'Yes-yes-yes!' — 'Then fly on home!' — 'The grey wolf by the hill won't let us!' After the chant, the geese dash home across the field while the wolf leaps out to catch them. A caught goose joins the wolf pack."
+      },
+      "origin": {"ru": "Россия, старинная народная игра", "en": "Russia, an old folk game"},
+      "age_min": 3,
+      "age_max": 8,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 3,
+      "energy": "active",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "bear-in-forest",
+      "emoji": "🐻",
+      "title": {"ru": "У медведя во бору", "en": "At the Bear's Den"},
+      "description": {
+        "ru": "«Медведь» дремлет в своей «берлоге», а дети подбираются всё ближе, собирая понарошку грибы и напевая: «У медведя во бору грибы-ягоды беру, а медведь не спит и на нас рычит!» На последнем слове медведь с рёвом бросается ловить. Пойманный — новый медведь.",
+        "en": "The 'bear' dozes in its den while children creep closer, pretend-picking mushrooms and singing: 'In the bear's forest I pick berries and mushrooms — but the bear's awake and growling at us!' On the last word the bear charges with a roar. Whoever's caught is the new bear."
+      },
+      "origin": {"ru": "Россия, старинная народная игра", "en": "Russia, an old folk game"},
+      "age_min": 3,
+      "age_max": 7,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 2,
+      "energy": "active",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "rucheyok",
+      "emoji": "🫱",
+      "title": {"ru": "Ручеёк", "en": "The Brook"},
+      "description": {
+        "ru": "Пары берутся за руки и поднимают их «воротами», выстроившись друг за другом, — получается живой коридор. Оставшийся без пары ныряет в «ручеёк», проходит под руками и уводит кого-то с собой в новую пару. Новый одиночка ныряет следом. Старинная хороводная игра с посиделок и ярмарок.",
+        "en": "Pairs join raised hands to form a living tunnel. The player without a partner dives into the 'brook', walks through under the arms and picks someone out for a new pair. The newly single player dives in next. An old round-dance game from fairs and village gatherings."
+      },
+      "origin": {"ru": "Россия, старинная хороводная игра", "en": "Russia, an old round-dance game"},
+      "age_min": 5,
+      "age_max": 12,
+      "locations": ["yard", "village", "home"],
+      "players_min": 5,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "third-wheel",
+      "emoji": "👥",
+      "title": {"ru": "Третий лишний", "en": "Third Wheel"},
+      "description": {
+        "ru": "Все встают парами в круг, один за другим. Двое бегают: убегающий может спастись, встав впереди любой пары — тогда «лишним» становится задний из пары, и теперь убегает он! Осалили — меняетесь ролями. Игра без конца, пока не упадёте от смеха.",
+        "en": "Everyone stands in pairs in a circle, one behind the other. Two players run: the runner can save themselves by stopping in front of any pair — then the rear player of that pair becomes the 'third wheel' and must flee! Get tagged and you swap roles."
+      },
+      "origin": {"ru": "Россия, дворовая классика", "en": "Russia, a yard classic"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["yard", "village"],
+      "players_min": 6,
+      "energy": "active",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "drop-handkerchief",
+      "emoji": "🧣",
+      "title": {"ru": "Платочек", "en": "Drop the Handkerchief"},
+      "description": {
+        "ru": "Все сидят в кругу, водящий ходит снаружи с платочком и незаметно роняет его кому-то за спиной. Заметил платочек — хватай его и догоняй водящего, пока тот не занял твоё место! Не заметил, и водящий обошёл круг — водишь сам.",
+        "en": "Players sit in a circle; the walker circles outside with a handkerchief and secretly drops it behind someone. Spot it — grab it and chase the walker before they steal your seat! Miss it for a full lap and you're the walker now."
+      },
+      "origin": {"ru": "Европа и Россия, известна с XVIII века", "en": "Europe and Russia, known since the 18th century"},
+      "age_min": 4,
+      "age_max": 9,
+      "locations": ["yard", "home", "village"],
+      "players_min": 5,
+      "energy": "active",
+      "props": {"ru": "Платочек", "en": "A handkerchief"},
+      "variants": [
+        {
+          "origin": {"ru": "США", "en": "USA"},
+          "text": {"ru": "«Duck, Duck, Goose»: водящий идёт по кругу, касаясь голов со словом «утка», и вдруг — «гусь!» Гусь вскакивает и догоняет.", "en": "'Duck, Duck, Goose': the walker taps heads saying 'duck' — until suddenly 'goose!' The goose leaps up and gives chase."}
+        }
+      ]
+    },
+    {
+      "id": "fishing-rod",
+      "emoji": "🎣",
+      "title": {"ru": "Удочка", "en": "The Fishing Rod"},
+      "description": {
+        "ru": "Водящий встаёт в центр круга и крутит по земле верёвку с мягким грузиком на конце (связанная кофта подойдёт) — это «удочка». Игроки перепрыгивают её, как рыбки через волну. Задела за ноги — ты пойман! Кто продержится дольше всех?",
+        "en": "The leader stands in the centre spinning a rope with a soft weight on the end (a tied-up jumper works) low along the ground — the 'fishing rod'. Players hop over it like fish over a wave. If it clips your feet — you're caught! Who lasts longest?"
+      },
+      "origin": {"ru": "Россия и весь мир, дворовая классика", "en": "Russia and worldwide, a yard classic"},
+      "age_min": 5,
+      "age_max": 12,
+      "locations": ["yard", "village"],
+      "players_min": 3,
+      "energy": "active",
+      "props": {"ru": "Верёвка с мягким грузиком", "en": "A rope with a soft weight"},
+      "safety": {"ru": "Грузик — только мягкий, крутить низко над землёй.", "en": "Soft weights only, and keep the rope low."}
+    },
+    {
+      "id": "tug-of-war",
+      "emoji": "🪵",
+      "title": {"ru": "Перетягивание каната", "en": "Tug of War"},
+      "description": {
+        "ru": "Две команды берутся за концы верёвки и по сигналу тянут каждая на себя — чья перетянет соперника через черту, та и победила. Игре тысячи лет: её изображали в древнеегипетских гробницах, а с 1900 по 1920 год она была олимпийским видом спорта!",
+        "en": "Two teams grip the ends of a rope and on the signal pull with all their might — drag the other team over the line to win. The game is millennia old: it's painted in Ancient Egyptian tombs, and from 1900 to 1920 it was an Olympic sport!"
+      },
+      "origin": {"ru": "Древний Египет и Китай", "en": "Ancient Egypt and China"},
+      "age_min": 5,
+      "age_max": 14,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 4,
+      "energy": "active",
+      "props": {"ru": "Крепкая верёвка 3–5 метров", "en": "A sturdy rope, 3–5 metres"},
+      "safety": {"ru": "Не наматывайте верёвку на руки, тяните на траве.", "en": "Never wrap the rope around hands; pull on grass."}
+    },
+    {
+      "id": "sack-race",
+      "emoji": "🦘",
+      "title": {"ru": "Бег в мешках", "en": "Sack Race"},
+      "description": {
+        "ru": "Залезь обеими ногами в мешок (подойдёт и старая наволочка для малышей), держи края руками — и скачи к финишу, как кенгуру! Падения — половина веселья. Любимый аттракцион английских деревенских ярмарок уже двести лет.",
+        "en": "Climb into a sack with both feet (an old pillowcase works for little ones), grip the edges — and bounce to the finish like a kangaroo! The tumbles are half the fun. A favourite of English village fairs for two hundred years."
+      },
+      "origin": {"ru": "Англия, ярмарки XIX века", "en": "England, 19th-century fairs"},
+      "age_min": 4,
+      "age_max": 12,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 2,
+      "energy": "active",
+      "props": {"ru": "Мешок или большая наволочка на игрока", "en": "A sack or big pillowcase per player"},
+      "safety": {"ru": "Скачите по траве или песку.", "en": "Race on grass or sand."}
+    },
+    {
+      "id": "egg-spoon-race",
+      "emoji": "🥄",
+      "title": {"ru": "Бег с яйцом в ложке", "en": "Egg-and-Spoon Race"},
+      "description": {
+        "ru": "Положи яйцо (лучше варёное — или картофелину, шишку, шарик) в столовую ложку, возьми её в вытянутую руку — и беги к финишу, не уронив! Уронил — вернись на старт. Английская забава времён королевы Виктории: первые упоминания — 1894 год.",
+        "en": "Balance an egg (hard-boiled is wise — or a potato, pinecone or ball) on a spoon held at arm's length — and race to the finish without dropping it! Drop it — back to the start. A Victorian English pastime first recorded in 1894."
+      },
+      "origin": {"ru": "Англия, XIX век", "en": "England, the 19th century"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["yard", "home", "village"],
+      "players_min": 2,
+      "energy": "active",
+      "props": {"ru": "Ложка и яйцо (или картофелина) на игрока", "en": "A spoon and an egg (or potato) per player"}
+    },
+    {
+      "id": "three-legged-race",
+      "emoji": "🦿",
+      "title": {"ru": "Бег на трёх ногах", "en": "Three-Legged Race"},
+      "description": {
+        "ru": "Встаньте парой плечом к плечу и свяжите платком ногу одного с ногой другого — теперь у вас на двоих три ноги! Сначала научитесь просто ходить в ногу («внешняя-внутренняя!»), потом бегите наперегонки с другой парой. Секрет чемпионов — командный ритм, а не скорость.",
+        "en": "Stand side by side and tie your inner legs together with a scarf — now you share three legs! First learn to walk in step ('outside-inside!'), then race another pair. The champions' secret is shared rhythm, not speed."
+      },
+      "origin": {"ru": "Англия, школьные праздники XIX века", "en": "England, 19th-century school fêtes"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 4,
+      "energy": "active",
+      "props": {"ru": "Платок или мягкая верёвка на пару", "en": "A scarf or soft rope per pair"},
+      "safety": {"ru": "Бегите по траве.", "en": "Race on grass."}
+    },
+    {
+      "id": "capture-the-flag",
+      "emoji": "🚩",
+      "title": {"ru": "Захват флага", "en": "Capture the Flag"},
+      "description": {
+        "ru": "Поле делится пополам, у каждой команды в тылу — «флаг» (палка, кепка, что угодно). Задача — пробраться на чужую половину, схватить флаг и донести его домой. На чужой половине тебя могут осалить — тогда стоишь «в плену», пока свои не выручат касанием. Игра любима скаутами больше века.",
+        "en": "Split the field in half; each team hides a 'flag' (a stick, a cap, anything) at the back of its territory. Sneak into enemy land, grab their flag and carry it home. Get tagged on the wrong side and you're 'in prison' until a teammate frees you with a touch. A scouting favourite for over a century."
+      },
+      "origin": {"ru": "США, скаутские игры с XIX века", "en": "USA, scouting games since the 19th century"},
+      "age_min": 7,
+      "age_max": 14,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 6,
+      "energy": "active",
+      "props": {"ru": "Два «флага»", "en": "Two 'flags'"}
+    },
+    {
+      "id": "nine-mens-morris",
+      "emoji": "🔺",
+      "title": {"ru": "Мельница", "en": "Nine Men's Morris"},
+      "description": {
+        "ru": "Начерти три вложенных квадрата, соединённых линиями, — доска готова. По очереди выставляйте по девять камешков: собрал три в ряд («мельницу») — забирай любой камень противника. У кого осталось два камня, тот проиграл. Доски для мельницы выцарапаны даже на крыше древнеегипетского храма в Курне.",
+        "en": "Draw three nested squares joined by lines — that's the board. Take turns placing nine pebbles each: line up three (a 'mill') and remove any enemy stone. Down to two stones — you lose. Morris boards are scratched even into the roof of an ancient Egyptian temple at Kurna."
+      },
+      "origin": {"ru": "Древний Египет и Рим", "en": "Ancient Egypt and Rome"},
+      "age_min": 7,
+      "age_max": 14,
+      "locations": ["home", "village", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Бумага или песок, по 9 камешков двух видов", "en": "Paper or sand, 9 pebbles per player in two kinds"},
+      "variants": [
+        {
+          "origin": {"ru": "Средневековая Англия", "en": "Medieval England"},
+          "text": {"ru": "поля выкапывали прямо в дёрне деревенских лугов — отсюда упоминание у Шекспира.", "en": "boards were cut right into village turf — hence Shakespeare's mention of it."}
+        }
+      ]
+    },
+    {
+      "id": "dots-and-boxes",
+      "emoji": "🔲",
+      "title": {"ru": "Точки и квадратики", "en": "Dots and Boxes"},
+      "description": {
+        "ru": "Нарисуй сетку из точек. По очереди соединяйте две соседние точки чёрточкой. Замкнул чей-то квадратик четвёртой стороной — пиши в него свою букву и ходи ещё раз! Побеждает захвативший больше квадратиков. Игру придумал французский математик Эдуар Люка в 1889 году.",
+        "en": "Draw a grid of dots. Take turns joining two neighbouring dots with a line. Close the fourth side of a box — write your initial inside and move again! Most boxes wins. Invented by French mathematician Édouard Lucas in 1889."
+      },
+      "origin": {"ru": "Франция, 1889 год", "en": "France, 1889"},
+      "age_min": 6,
+      "age_max": 14,
+      "locations": ["home", "city"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Бумага и два карандаша", "en": "Paper and two pencils"}
+    },
+    {
+      "id": "paper-boats",
+      "emoji": "⛵",
+      "title": {"ru": "Гонки бумажных корабликов", "en": "Paper Boat Races"},
+      "description": {
+        "ru": "Сложи кораблик из бумаги (это само по себе древнее искусство!), подпиши борт — и спускай на воду ручья или большой лужи. Чей кораблик первым доплывёт до «маяка»? Можно подгонять его, дуя в «парус», но трогать руками нельзя. Весной после дождя — лучший сезон регаты.",
+        "en": "Fold a paper boat (an ancient art in itself!), name it on the side — and launch it on a stream or a big puddle. Whose boat reaches the 'lighthouse' first? You may blow into the 'sail' but no hands allowed. Spring after rain is peak regatta season."
+      },
+      "origin": {"ru": "Весь мир; складывать кораблики умели ещё в старом Китае и Японии", "en": "Worldwide; boat-folding goes back to old China and Japan"},
+      "age_min": 3,
+      "age_max": 10,
+      "locations": ["city", "village", "nature"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Бумага", "en": "Paper"},
+      "safety": {"ru": "У воды — только со взрослым.", "en": "Near water only with an adult."}
+    },
+    {
+      "id": "stone-skipping",
+      "emoji": "🪨",
+      "title": {"ru": "Блинчики по воде", "en": "Stone Skipping"},
+      "description": {
+        "ru": "Найди плоский гладкий камешек, встань боком к воде, присядь пониже — и запусти его параллельно поверхности с подкруткой. Камень запрыгает по воде «блинчиками»! Считайте прыжки: три — уже хорошо, семь — мастерски. Об этой забаве писали ещё древние греки, а мировой рекорд — 88 отскоков.",
+        "en": "Find a flat smooth stone, stand side-on to the water, crouch low — and fling it parallel to the surface with a spin. It bounces across in 'pancakes'! Count the skips: three is good, seven is mastery. Ancient Greeks wrote about this pastime; the world record is 88 bounces."
+      },
+      "origin": {"ru": "Древняя Греция", "en": "Ancient Greece"},
+      "age_min": 5,
+      "age_max": 14,
+      "locations": ["nature", "village"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Плоские камешки и водоём", "en": "Flat stones and open water"},
+      "safety": {"ru": "Кидайте только туда, где никто не купается. Малыши — под присмотром у воды.", "en": "Throw only where no one swims. Watch little ones near water."}
+    },
+    {
+      "id": "hali-halo",
+      "emoji": "🌈",
+      "title": {"ru": "Хали-хало", "en": "Hali-Halo"},
+      "description": {
+        "ru": "Водящий загадывает слово и даёт подсказку: «Хали-хало, это фрукт на букву А». Кто угадал — водящий подбрасывает мяч и убегает, а угадавший ловит и кричит «Стоп!» Потом угадавший на глаз оценивает расстояние до водящего в шагах и, сделав их, бросает мяч в «кольцо» из рук водящего.",
+        "en": "The leader thinks of a word and hints: 'Hali-halo, a fruit starting with A'. When someone guesses, the leader hurls the ball up and runs; the guesser catches it and shouts 'Stop!' Then estimates the distance in steps, walks them, and tosses the ball into the 'hoop' the leader makes with their arms."
+      },
+      "origin": {"ru": "СССР, дворовая классика", "en": "USSR, a yard classic"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["yard", "village"],
+      "players_min": 3,
+      "energy": "active",
+      "props": {"ru": "Мяч", "en": "A ball"}
+    },
+    {
+      "id": "yes-no-ball",
+      "emoji": "🎩",
+      "title": {"ru": "«Да» и «нет» не говорите", "en": "Don't Say Yes or No"},
+      "description": {
+        "ru": "Ведущий объявляет: «Вам барыня прислала сто рублей: „да“ и „нет“ не говорите, чёрный с белым не берите!» — и начинает каверзные расспросы: «Вы поедете на бал?» Отвечать надо быстро, не используя запретные слова. «Конечно!» — молодец. «Да» — попался! Салонная игра, которой веселились ещё пушкинские барышни.",
+        "en": "The leader declares the forbidden words — 'yes', 'no', 'black' and 'white' — then fires tricky questions: 'Are you coming to the ball?' Answer fast without the banned words. 'Certainly!' — well done. 'Yes' — caught! A parlour game that amused young ladies in Pushkin's day."
+      },
+      "origin": {"ru": "Россия, салонная игра XIX века", "en": "Russia, a 19th-century parlour game"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["home", "city"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "morra",
+      "emoji": "🤌",
+      "title": {"ru": "Морра", "en": "Morra"},
+      "description": {
+        "ru": "Оба игрока одновременно выбрасывают на пальцах число и выкрикивают, какой будет сумма пальцев у обоих. Угадал сумму — очко! Играют до пяти. Звучит просто, но азарт невероятный: в морру резались римские легионеры, а в Италии она гремит на площадях до сих пор.",
+        "en": "Both players throw out fingers at the same moment while shouting a guess at the total. Guess the sum — score a point! Play to five. Sounds simple, but the thrill is real: Roman legionaries battled at morra, and Italian piazzas still ring with it today."
+      },
+      "origin": {"ru": "Древний Рим", "en": "Ancient Rome"},
+      "age_min": 6,
+      "age_max": 14,
+      "locations": ["home", "city", "yard", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "pebble-petanque",
+      "emoji": "🎯",
+      "title": {"ru": "Петанк камешками", "en": "Pebble Pétanque"},
+      "description": {
+        "ru": "Брось маленький яркий камешек-«кошонет» на пару метров вперёд. Теперь по очереди кидайте камни покрупнее — чей ляжет ближе всех к кошонету, тот победил раунд. Можно выбивать чужие камни своим! Так на юге Франции играют в петанк, а дети — везде, где есть камешки.",
+        "en": "Toss a small bright target pebble a couple of metres ahead. Now take turns throwing bigger stones — closest to the target wins the round. Knocking rivals' stones away is allowed! That's how southern France plays pétanque — and kids play it wherever there are pebbles."
+      },
+      "origin": {"ru": "Франция, Прованс", "en": "France, Provence"},
+      "age_min": 5,
+      "age_max": 12,
+      "locations": ["yard", "village", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Камешки", "en": "Pebbles"}
+    },
+    {
+      "id": "paper-pinata",
+      "emoji": "🪅",
+      "title": {"ru": "Пиньята из пакета", "en": "Paper Bag Piñata"},
+      "description": {
+        "ru": "Набей бумажный пакет конфетами и мелкими сюрпризами, обклей яркими лентами и подвесь на верёвке. Игрок с завязанными глазами пытается разбить её палкой, остальные кричат «горячо-холодно!» Лопнула — все собирают дождь из конфет! Пиньяту привезли в Мексику из Китая через Италию, и ей больше семи веков.",
+        "en": "Stuff a paper bag with sweets and small surprises, decorate with bright streamers and hang it on a rope. A blindfolded player tries to burst it with a stick while everyone shouts 'hotter-colder!' When it pops — a candy rain scramble! The piñata reached Mexico from China via Italy and is over seven centuries old."
+      },
+      "origin": {"ru": "Мексика (родом из Китая)", "en": "Mexico (originally from China)"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["home", "yard", "village"],
+      "players_min": 2,
+      "energy": "active",
+      "props": {"ru": "Бумажный пакет, конфеты, верёвка, палка", "en": "A paper bag, sweets, rope, a stick"},
+      "safety": {"ru": "Отойдите подальше от бьющего палкой.", "en": "Stand well clear of the swinging stick."}
+    },
+    {
+      "id": "paper-fortune-teller",
+      "emoji": "🔮",
+      "title": {"ru": "Гадалка-оригами", "en": "Paper Fortune Teller"},
+      "description": {
+        "ru": "Сложи из квадрата бумаги «гадалку» — уголки надеваются на пальцы и раскрываются в стороны, как клюв. Снаружи цвета, внутри цифры, под клапанами — предсказания, которые вы сами напишете (посмешнее!). Друг называет цвет и число — гадалка щёлкает и выдаёт судьбу.",
+        "en": "Fold a square of paper into a 'fortune teller' — the corners slip onto your fingers and snap open like a beak. Colours outside, numbers inside, and under the flaps — fortunes you write yourselves (the sillier the better!). A friend picks a colour and number — the teller clicks away and reveals their fate."
+      },
+      "origin": {"ru": "Оригами из Японии; гадалка покорила школы всего мира в XX веке", "en": "Origami from Japan; the fortune teller swept world schoolyards in the 20th century"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["home", "city"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Квадрат бумаги и карандаш", "en": "A square of paper and a pencil"}
+    },
+    {
+      "id": "paper-planes",
+      "emoji": "✈️",
+      "title": {"ru": "Авиашоу бумажных самолётиков", "en": "Paper Plane Air Show"},
+      "description": {
+        "ru": "Сложите каждый по самолётику и устройте соревнования в трёх дисциплинах: на дальность, на время в воздухе и на точность посадки в «аэропорт» (коробку). Потом улучшайте конструкцию: подогните крылья, добавьте скрепку на нос. Мировой рекорд дальности — 88 метров!",
+        "en": "Everyone folds a plane, then compete in three events: distance, time aloft, and precision landing at the 'airport' (a box). Then engineer upgrades: bend the wingtips, clip a paperclip to the nose. The world distance record is 88 metres!"
+      },
+      "origin": {"ru": "Весь мир, XX век", "en": "Worldwide, the 20th century"},
+      "age_min": 4,
+      "age_max": 12,
+      "locations": ["home", "yard"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Бумага", "en": "Paper"}
+    },
+    {
+      "id": "jianzi",
+      "emoji": "🏸",
+      "title": {"ru": "Зоска (дзяньцзы)", "en": "Jianzi Shuttlecock"},
+      "description": {
+        "ru": "Набивай ногой волан или самодельную зоску — кусочек ткани с грузиком и «хвостом» из перьев или ленточек. Считайте, кто больше: внутренней стороной стопы, коленом, пяткой! В Китае в дзяньцзы играют больше двух тысяч лет, солдаты тренировали так ловкость.",
+        "en": "Keep a shuttlecock airborne with your feet — or make one from cloth, a small weight and a 'tail' of feathers or ribbons. Count who gets more: inside of the foot, knee, heel! China has played jianzi for over two thousand years — soldiers trained agility with it."
+      },
+      "origin": {"ru": "Китай, более 2000 лет", "en": "China, over 2,000 years"},
+      "age_min": 7,
+      "age_max": 14,
+      "locations": ["yard", "home", "village"],
+      "players_min": 1,
+      "energy": "active",
+      "props": {"ru": "Волан или самодельная зоска", "en": "A shuttlecock or homemade jianzi"},
+      "variants": [
+        {
+          "origin": {"ru": "Средняя Азия и Россия", "en": "Central Asia and Russia"},
+          "text": {"ru": "«Лянга»: набивают кусочком меха с пришитым грузиком, со своими трюками — «люры», «виси».", "en": "'Lyanga': played with a fur patch and sewn-on weight, with its own trick vocabulary."}
+        }
+      ]
+    },
+    {
+      "id": "stick-balance",
+      "emoji": "🥍",
+      "title": {"ru": "Малечина-калечина", "en": "Stick Balancing"},
+      "description": {
+        "ru": "Поставь палку вертикально на ладонь (или на палец, локоть, колено!) и удерживай её в равновесии, приговаривая: «Малечина-калечина, сколько часов до вечера?» — и считай, сколько продержишь. Старинная русская игра на ловкость: побеждает тот, чья «малечина» простоит дольше.",
+        "en": "Balance a stick upright on your palm (or finger, elbow, knee!) chanting the old rhyme and counting how long it stands. An old Russian dexterity game: the longest-standing stick wins."
+      },
+      "origin": {"ru": "Россия, старинная народная игра", "en": "Russia, an old folk game"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["yard", "home", "village", "nature"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Палка или прутик", "en": "A stick"}
+    },
+    {
+      "id": "shadow-portraits",
+      "emoji": "👤",
+      "title": {"ru": "Портрет из тени", "en": "Shadow Portraits"},
+      "description": {
+        "ru": "В солнечный день встань так, чтобы твоя тень легла на асфальт, и замри в смешной позе — а друг обведёт её мелом. Потом меняйтесь! Дорисуйте теням лица, короны и крылья. По древнегреческой легенде, так и родилась живопись: девушка обвела на стене тень любимого.",
+        "en": "On a sunny day, stand so your shadow falls on the pavement, freeze in a funny pose — and a friend traces it with chalk. Then swap! Give the shadows faces, crowns and wings. By Ancient Greek legend, painting itself was born this way — a girl traced her beloved's shadow on a wall."
+      },
+      "origin": {"ru": "Древняя Греция — легенда о рождении живописи", "en": "Ancient Greece — the legend of painting's birth"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["yard", "city"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Мел и солнце", "en": "Chalk and sunshine"}
+    },
+    {
+      "id": "dandelion-wreath",
+      "emoji": "🌼",
+      "title": {"ru": "Венок из одуванчиков", "en": "Dandelion Crown"},
+      "description": {
+        "ru": "Собери охапку одуванчиков с длинными стеблями и плети венок: каждый новый стебель оборачивается вокруг предыдущих. Готовый венок — корона лесной феи или короля лета! У славян плетение венков — древний обряд: по венкам, пущенным по реке, девушки гадали о будущем.",
+        "en": "Gather an armful of long-stemmed dandelions and weave a crown: each new stem wraps around the previous ones. The finished wreath crowns a forest fairy or the king of summer! For the Slavs wreath-weaving was an ancient rite — floated down rivers to tell fortunes."
+      },
+      "origin": {"ru": "Славянская традиция", "en": "A Slavic tradition"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["village", "nature", "yard"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Одуванчики или полевые цветы", "en": "Dandelions or wildflowers"}
+    },
+    {
+      "id": "grass-whistle",
+      "emoji": "🌾",
+      "title": {"ru": "Свисток из травинки", "en": "Grass Whistle"},
+      "description": {
+        "ru": "Найди широкую плоскую травинку, зажми её ребром между большими пальцами обеих рук, чтобы натянулась струной, — и дуй в щёлочку между пальцами. Получится пронзительный свист! Настройка «инструмента» — половина удовольствия. Пастушья хитрость, которой сотни лет.",
+        "en": "Find a wide flat blade of grass, stretch it taut edge-on between your two thumbs — and blow through the gap between them. A piercing whistle! Tuning the 'instrument' is half the fun. A shepherd's trick centuries old."
+      },
+      "origin": {"ru": "Пастушьи забавы, многовековая традиция", "en": "Shepherds' pastimes, centuries old"},
+      "age_min": 5,
+      "age_max": 12,
+      "locations": ["nature", "village", "yard"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Широкая травинка", "en": "A wide blade of grass"}
+    },
+    {
+      "id": "secret-language",
+      "emoji": "🗝️",
+      "title": {"ru": "Тайный язык", "en": "Secret Language"},
+      "description": {
+        "ru": "Придумайте свой шифрованный язык: вставляйте после каждого слога лишний слог с «с» — «при-си-ве-сет» вместо «привет». Потренируйтесь, пока не начнёте болтать бегло, — и обсуждайте секреты прямо при всех! Взрослые ничего не поймут, проверено поколениями.",
+        "en": "Invent your own coded speech: slip an extra syllable after every real one — 'hi' becomes 'hi-bi', 'hello' becomes 'he-be-llo-bo'. Practise until you're fluent — then trade secrets in plain sight! Grown-ups won't understand a thing; generations have proved it."
+      },
+      "origin": {"ru": "Весь мир; в США — «поросячья латынь»", "en": "Worldwide; 'Pig Latin' in the USA"},
+      "age_min": 7,
+      "age_max": 14,
+      "locations": ["home", "city", "yard"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""},
+      "variants": [
+        {
+          "origin": {"ru": "США", "en": "USA"},
+          "text": {"ru": "«Pig Latin»: первый звук слова переносят в конец и добавляют «эй» — «ig-pay atin-lay».", "en": "'Pig Latin': move the first sound to the end and add 'ay' — 'ig-pay atin-lay'."}
+        },
+        {
+          "origin": {"ru": "Швеция", "en": "Sweden"},
+          "text": {"ru": "«Rövarspråket», «язык разбойников» из книг Астрид Линдгрен: согласные удваиваются с «о» посередине.", "en": "'Rövarspråket', the robbers' language from Astrid Lindgren's books: consonants double with an 'o' in between."}
+        }
+      ]
+    },
+    {
+      "id": "staring-contest",
+      "emoji": "👀",
+      "title": {"ru": "Гляделки", "en": "Staring Contest"},
+      "description": {
+        "ru": "Сядьте напротив и смотрите друг другу в глаза: кто первым моргнёт или засмеётся — проиграл. Второй раунд — «Не смеяться»: теперь можно корчить рожи и говорить смешное, а соперник должен сохранять каменное лицо. Простейшая игра, а смеха — на весь вечер.",
+        "en": "Sit face to face and lock eyes: first to blink or laugh loses. Round two — 'Don't laugh': now you may pull faces and say silly things while your rival keeps a stone face. The simplest game, and an evening's worth of laughter."
+      },
+      "origin": {"ru": "Весь мир, вечная забава", "en": "Worldwide, an eternal pastime"},
+      "age_min": 4,
+      "age_max": 12,
+      "locations": ["home", "city", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "twenty-questions",
+      "emoji": "❓",
+      "title": {"ru": "Двадцать вопросов", "en": "Twenty Questions"},
+      "description": {
+        "ru": "Один загадывает что угодно — предмет, животное, героя. Остальные задают вопросы, на которые можно отвечать только «да» или «нет»: «Оно живое? Больше кошки? Умеет летать?» Угадали за двадцать вопросов — победа! Викторианская салонная игра, в которую до сих пор играют в дороге по всему миру.",
+        "en": "One player thinks of anything — an object, animal or character. The rest ask questions answerable only with 'yes' or 'no': 'Is it alive? Bigger than a cat? Can it fly?' Guess within twenty questions to win! A Victorian parlour game still played on journeys worldwide."
+      },
+      "origin": {"ru": "Англия, XIX век", "en": "England, the 19th century"},
+      "age_min": 7,
+      "age_max": 14,
+      "locations": ["home", "city", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "i-spy",
+      "emoji": "🔍",
+      "title": {"ru": "Я вижу то, чего не видишь ты", "en": "I Spy"},
+      "description": {
+        "ru": "Оглянись, выбери предмет в поле зрения и скажи: «Я вижу то, чего не видишь ты, и оно... зелёное!» Остальные по очереди угадывают: «Куст? Скамейка? Чей-то рюкзак?» Кто отгадал — загадывает следующим. Немецкие семьи играют в «Ich sehe was, was du nicht siehst» уже несколько веков.",
+        "en": "Look around, pick something in sight and say: 'I spy with my little eye something... green!' The others take turns guessing: 'The bush? The bench? Someone's backpack?' The winner spies next. German families have played 'Ich sehe was, was du nicht siehst' for centuries."
+      },
+      "origin": {"ru": "Германия и Англия, старинная семейная игра", "en": "Germany and England, an old family game"},
+      "age_min": 4,
+      "age_max": 9,
+      "locations": ["city", "home", "nature", "village"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "memory-backpack",
+      "emoji": "🎒",
+      "title": {"ru": "Я беру с собой в поход", "en": "I Packed My Backpack"},
+      "description": {
+        "ru": "Первый говорит: «Я беру с собой в поход... фонарик». Второй повторяет и добавляет своё: «...фонарик и палатку». Третий — всё сначала плюс новое. Список растёт, и удержать его в голове всё труднее! Сбился — выбываешь. Отличная тренировка памяти под видом игры.",
+        "en": "The first player says: 'In my backpack I packed... a torch'. The second repeats and adds: '...a torch and a tent'. The third recites everything plus one more. The list grows and grows! Slip up and you're out. Memory training disguised as a game."
+      },
+      "origin": {"ru": "Англия, викторианская салонная игра", "en": "England, a Victorian parlour game"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["home", "city", "nature"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "", "en": ""}
+    },
+    {
+      "id": "snail-race",
+      "emoji": "🐌",
+      "title": {"ru": "Гонки улиток", "en": "Snail Racing"},
+      "description": {
+        "ru": "После дождя найдите по улитке, дайте им имена и поставьте в центр нарисованного круга. Чья улитка первой доползёт до края — та чемпион! Подгонять нельзя, можно только болеть и подкладывать листики. В Англии проводят настоящий чемпионат мира по улиточным бегам — рекорд трассы: 2 минуты!",
+        "en": "After rain, each player finds a snail, names it and sets it at the centre of a drawn circle. First snail to the edge is champion! No pushing — only cheering and offering leaves. England holds a real Snail Racing World Championship — track record: 2 minutes!"
+      },
+      "origin": {"ru": "Англия, деревенская забава", "en": "England, a village pastime"},
+      "age_min": 3,
+      "age_max": 10,
+      "locations": ["village", "nature", "yard"],
+      "players_min": 2,
+      "energy": "calm",
+      "props": {"ru": "Улитки (после игры вернуть в траву!)", "en": "Snails (return them to the grass after!)"}
+    },
+    {
+      "id": "chestnut-figures",
+      "emoji": "🧸",
+      "title": {"ru": "Человечки из каштанов", "en": "Chestnut Creatures"},
+      "description": {
+        "ru": "Собери каштаны и жёлуди, попроси взрослого проделать дырочки — и соединяй их спичками или зубочистками в человечков и зверей: ёжика, оленя, дракона! В Германии такие «каштановые человечки» — любимое осеннее занятие уже двести лет. Устройте выставку своих существ на подоконнике.",
+        "en": "Gather chestnuts and acorns, ask an adult to poke holes — and join them with matchsticks or toothpicks into little people and beasts: a hedgehog, a deer, a dragon! In Germany 'chestnut people' have been a beloved autumn craft for two hundred years. Exhibit your creatures on the windowsill."
+      },
+      "origin": {"ru": "Германия, осенняя традиция", "en": "Germany, an autumn tradition"},
+      "age_min": 4,
+      "age_max": 10,
+      "locations": ["home", "village", "nature"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Каштаны, жёлуди, зубочистки (дырочки делает взрослый)", "en": "Chestnuts, acorns, toothpicks (adult makes the holes)"}
+    },
+    {
+      "id": "pinecone-toss",
+      "emoji": "🌲",
+      "title": {"ru": "Шишкобол", "en": "Pinecone Toss"},
+      "description": {
+        "ru": "Нарисуй на земле круг или поставь ведёрко — и кидай в цель шишки с трёх шагов. Попал — отходи на шаг дальше. Кто забросит с самого дальнего рубежа, тот лесной снайпер! Можно играть командами и вести счёт, как в баскетболе.",
+        "en": "Draw a circle on the ground or set up a bucket — and toss pinecones at it from three paces. Score a hit — step one pace further back. Whoever scores from the farthest line is the forest sniper! Play in teams and keep basketball-style score."
+      },
+      "origin": {"ru": "Лесные забавы, вечная игра", "en": "Forest play, timeless"},
+      "age_min": 3,
+      "age_max": 10,
+      "locations": ["nature", "village"],
+      "players_min": 1,
+      "energy": "calm",
+      "props": {"ru": "Шишки и ведёрко или круг на земле", "en": "Pinecones and a bucket or drawn circle"}
+    },
+    {
+      "id": "wall-ball",
+      "emoji": "🧱",
+      "title": {"ru": "Лягушка (мяч об стену)", "en": "Wall Ball"},
+      "description": {
+        "ru": "Кидай мяч об стену и перепрыгивай через него, когда он отскакивает от земли! Не перепрыгнул — получаешь букву: сначала «л», потом «я»... Собрал слово «лягушка» целиком — выбываешь. Можно усложнять: бросать из-под ноги, хлопать в ладоши во время полёта.",
+        "en": "Throw the ball against a wall and leap over it as it bounces back off the ground! Miss the jump and you collect a letter: F, then R, O, G... Spell the whole word 'FROG' and you're out. Level up: throw under your leg or clap while the ball flies."
+      },
+      "origin": {"ru": "СССР, дворовая классика", "en": "USSR, a yard classic"},
+      "age_min": 6,
+      "age_max": 12,
+      "locations": ["yard", "city"],
+      "players_min": 1,
+      "energy": "active",
+      "props": {"ru": "Мяч и стена", "en": "A ball and a wall"}
     }
   ]
 }

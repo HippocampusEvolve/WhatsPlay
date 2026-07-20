@@ -1,3 +1,20 @@
+/// Вариант игры в другой стране или эпохе.
+class ActivityVariant {
+  const ActivityVariant({required this.origin, required this.text});
+
+  final Map<String, String> origin;
+  final Map<String, String> text;
+
+  factory ActivityVariant.fromJson(Map<String, dynamic> json) =>
+      ActivityVariant(
+        origin: Map<String, String>.from(json['origin'] as Map),
+        text: Map<String, String>.from(json['text'] as Map),
+      );
+
+  String originIn(String lang) => origin[lang] ?? origin['en'] ?? '';
+  String textIn(String lang) => text[lang] ?? text['en'] ?? '';
+}
+
 /// Одна игра из базы. Все тексты хранятся в двух языках: ключи 'ru' и 'en'.
 class Activity {
   const Activity({
@@ -13,6 +30,7 @@ class Activity {
     required this.energy,
     required this.props,
     this.safety,
+    this.variants = const [],
   });
 
   final String id;
@@ -27,6 +45,7 @@ class Activity {
   final String energy; // 'active' | 'calm'
   final Map<String, String> props;
   final Map<String, String>? safety;
+  final List<ActivityVariant> variants;
 
   factory Activity.fromJson(Map<String, dynamic> json) {
     Map<String, String> text(String key) =>
@@ -44,6 +63,11 @@ class Activity {
       energy: json['energy'] as String,
       props: text('props'),
       safety: json['safety'] == null ? null : text('safety'),
+      variants: json['variants'] == null
+          ? const []
+          : (json['variants'] as List)
+              .map((v) => ActivityVariant.fromJson(v as Map<String, dynamic>))
+              .toList(),
     );
   }
 

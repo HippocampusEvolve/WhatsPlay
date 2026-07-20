@@ -100,6 +100,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get safetyLabel => 'Осторожно';
 
   @override
+  String get variantsLabel => 'А в других странах и эпохах';
+
+  @override
   String get favoritesTitle => 'Сохранённые игры';
 
   @override

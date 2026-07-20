@@ -99,6 +99,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get safetyLabel => 'Stay safe';
 
   @override
+  String get variantsLabel => 'Around the world, through the ages';
+
+  @override
   String get favoritesTitle => 'Saved games';
 
   @override

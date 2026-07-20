@@ -242,6 +242,12 @@ abstract class AppLocalizations {
   /// **'Stay safe'**
   String get safetyLabel;
 
+  /// No description provided for @variantsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Around the world, through the ages'**
+  String get variantsLabel;
+
   /// No description provided for @favoritesTitle.
   ///
   /// In en, this message translates to:

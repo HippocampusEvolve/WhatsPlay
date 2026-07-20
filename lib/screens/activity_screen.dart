@@ -127,6 +127,39 @@ class _ActivityScreenState extends State<ActivityScreen> {
                       ),
                     ),
                   ],
+                  if (_activity.variants.isNotEmpty) ...[
+                    const SizedBox(height: 20),
+                    Row(
+                      children: [
+                        Icon(Icons.travel_explore,
+                            size: 20, color: theme.colorScheme.primary),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(l.variantsLabel,
+                              style: theme.textTheme.titleMedium),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    for (final v in _activity.variants)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: '${v.originIn(lang)}: ',
+                                style: const TextStyle(
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              TextSpan(text: v.textIn(lang)),
+                            ],
+                          ),
+                          style: theme.textTheme.bodyMedium
+                              ?.copyWith(height: 1.35),
+                        ),
+                      ),
+                  ],
                 ],
               ),
             ),
