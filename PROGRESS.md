@@ -2,11 +2,12 @@
 
 ## Сделано
 
-- 2026-07-20: Анализ и выбор стека (Flutter, оффлайн-база JSON, рус+англ). Настройка окружения: Flutter SDK в C:\flutter, ANDROID_HOME/JAVA_HOME/PATH прописаны.
+- 2026-07-20: Анализ и выбор стека (Flutter, оффлайн-база JSON, рус+англ). Настройка окружения: Flutter 3.44.6 в C:\flutter, ANDROID_HOME/JAVA_HOME/PATH прописаны, Android SDK 36 + cmdline-tools установлены, лицензии приняты.
+- 2026-07-20: Создан Flutter-проект (org com.hippocampusevolve), git-репозиторий https://github.com/HippocampusEvolve/WhatsPlay (приватный), первый push. Первый debug-APK собран: `build/app/outputs/flutter-apk/app-debug.apk`.
 
 ## В работе
 
-- Каркас проекта Flutter, первый тестовый APK.
+- Каркас самого приложения: анкета детей → выбор места → карточка игры.
 
 ## Дальше
 
