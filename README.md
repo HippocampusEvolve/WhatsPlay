@@ -38,3 +38,7 @@ flutter build apk --release
 Хочешь добавить игру из своего детства? Открой issue или pull request — формат карточки виден в `activities.json`.
 
 Want to add a game from your own childhood? Open an issue or a pull request — the card format is visible in `activities.json`.
+
+## Лицензия / License
+
+[MIT](LICENSE)
