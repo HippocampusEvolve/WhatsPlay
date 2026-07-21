@@ -19,7 +19,8 @@
 ## Публикация
 
 - 2026-07-21: Аудит на секреты пройден (рабочее дерево + вся история git — чисто). Репозиторий открыт (public), написан README (рус+англ). Опубликован **GitHub Release v0.2.0** с тремя APK: arm64 (16 МБ), arm32 (13.5 МБ), universal (45 МБ): https://github.com/HippocampusEvolve/WhatsPlay/releases/tag/v0.2.0
-- Позже возможны RuStore / Google Play ($25, потребуется настоящий ключ подписи — не в репо).
+- 2026-07-21: Подготовка к RuStore: создан release-ключ (`G:\Pets\WhatsPlay-keys\` — ВНЕ репо, там же пароль; нужен бэкап!), подпись подключена в gradle, версия 0.2.0+2, иконка-шарик (launcher + 512 для магазина), политика конфиденциальности на GitHub Pages, тексты для карточки — `docs/store/rustore-listing.md`. Подписанный APK: `WhatsPlay-v0.2-rustore.apk`. Осталось: регистрация пользователя в console.rustore.ru и загрузка.
+- Позже возможен Google Play ($25).
 
 ## В работе
 
