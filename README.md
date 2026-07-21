@@ -4,6 +4,14 @@
 
 **What shall the kids play?** An offline app for parents: enter your kids' ages and where you are (home, yard, city, village, nature) — get a game card. The database holds **232 real games from different countries and eras**: from Ancient Greek knucklebones and Roman morra to Soviet "sekretiki" and Ghanaian ampe.
 
+<p align="center">
+  <img src="docs/demo.gif" width="260" alt="WhatsPlay demo" />
+</p>
+
+| Главный экран | Карточка игры | Каждому своё |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/02-home.png" width="230" alt="Home" /> | <img src="docs/screenshots/03-card.png" width="230" alt="Game card" /> | <img src="docs/screenshots/05-per-child.png" width="230" alt="One for each" /> |
+
 ## Возможности / Features
 
 - 🎲 Случайная игра под возраст и место / Random game matching age and location
